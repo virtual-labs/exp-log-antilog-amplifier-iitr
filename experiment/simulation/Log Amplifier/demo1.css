@@ -1,0 +1,106 @@
+ body {
+    background-color: linen;
+
+}
+  
+.demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+}
+/** JSPLUMB ARTEFACTS **/
+.jtk-overlay {
+    z-index: 51;
+}
+
+.jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+}
+
+.jtk-connector {
+    z-index: 1;
+}
+
+/** ELEMENTS **/
+.littledot
+{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url(littledot.png);
+    z-index: 5;
+    position: absolute;
+    border-radius: 31px;
+}
+
+
+
+.littledot-hover-hover {
+    border: 2px solid orange;
+}
+
+.dropHover {
+    border: 1px solid orange;
+}
+
+/** ELEMENT POSITIONS **/
+#ld1 {
+    top: 180px;
+    left: 170px;
+}
+
+#ld2 {
+    top:180px;
+    left:376px;
+}
+
+#ld3 {
+    top:298px;
+    left:142px;
+}
+
+#ld4 {
+    top: 297px;
+    left:253px;;
+}
+
+#ld5 {
+    top:298px;
+    left:315px;
+}
+#ld6 {
+    top:298px;
+    left:472px;
+}
+
+#ld7 {
+    top: 384px;
+    left: 171px;
+}
+
+#ld8 {
+    top: 447px;
+    left:172px;;
+}
+
+#ld9 {
+    top: 412px;
+    left: 434px;
+}
+
+#ld10 {
+    top:325px;
+    left:600px;
+}
+
+#ld11 {
+    top: 400px;
+    left: 600px;
+}
+#ld12 {
+    top: 583px;
+    left: 451px;
+}
+path, .jtk-endpoint {
+    cursor: pointer;
+}
