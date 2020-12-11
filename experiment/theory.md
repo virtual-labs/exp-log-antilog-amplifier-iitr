@@ -6,7 +6,7 @@ The electronic circuits which perform the mathematical operations such as logari
 
 A logarithmic amplifier (or a log amplifier) is an electronic circuit that produces an output that is proportional to the logarithm of the applied input. Other applications for log/anti-log amplifiers include signal compression and process control. Signals are often compressed in order to decrease their dynamic range (i.e., the difference between the highest and lowest level signals). In telecommunications systems, this may be required in order to achieve reasonable
 voice or data transmission with limited resources. An op-amp based logarithmic amplifier produces a voltage at the output, which is proportional to the logarithm of the voltage applied to the resistor connected to its inverting terminal.         
-<center></center><b>𝐼<sub>𝐸</sub> = (𝑒<sup>(qV<sub>E</sub>/𝑘𝑇)</sup> − 1)<br> </b></center>
+<center><b>𝐼<sub>𝐸</sub> = (𝑒<sup>(qV<sub>E</sub>/𝑘𝑇)</sup> − 1)<br> </b></center>
 Since I<sub>C</sub> = I<sub>E</sub> for a grounded base transistor,<br>
 <center><b>𝐼<sub>C</sub> = I<sub>s</sub>(𝑒<sup>(qV<sub>E</sub>/𝑘𝑇)</sup> − 1),</b><br></center>
 Where  <br>
