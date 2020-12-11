@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To study log and antilog amplifier.
