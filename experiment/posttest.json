@@ -1,0 +1,46 @@
+[{
+	"question": "The units of voltage gain is",
+	"answers": {
+		"a": "It has no units, it is a ratio",
+		"b": "Decibels (db)",
+		"c": "All of the mentioned",
+		"d": "None of the mentioned"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The input voltage, 6V and reference voltage, 4V are applied to a log-amp with saturation current and temperature compensation. Find the output voltage of the log-amp?",
+	"answers": {
+		"a": "6.314(kT/q)V",
+		"b": "0.597(kT/q)V",
+		"c": "0.405(kT/q)V",
+		"d": "1.214(kT/q)V"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "Find the output voltage of the log-amplifier.",
+	"answers": {
+		"a": "VO = -(kT)×ln(Vi/Vref)",
+		"b": "VO = -(kT/q)×ln(Vi/Vref)",
+		"c": "VO = -(kT/q)×ln(Vref/Vi)",
+		"d": "VO = (kT/q)×ln(Vi/Vref)"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The voltage gain of a basic instrumentation amplifier is set by __________",
+	"answers": {
+		"a": "diode",
+		"b": "capacitor",
+		"c": "resistor",
+		"d": "inductor"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "What is meant by stability of the an amplified signal?",
+	"answers": {
+		"a": "The amplified signal must have a finite amplitude",
+		"b": "The amplified signal should not have self oscillation",
+		"c": "The input and the output signal must be proportional",
+		"d": "The ratio of the input and the output signal must be finite"
+	},
+	"correctAnswer": "b"
+}]
