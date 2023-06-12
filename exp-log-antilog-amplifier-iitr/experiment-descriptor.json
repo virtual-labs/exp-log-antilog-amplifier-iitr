@@ -13,7 +13,13 @@
       "unit-type": "task",
       "content-type": "text"
     },
-    
+    {
+      "target": "objective.html",
+      "source": "objective.md",
+      "label": "Objective",
+      "unit-type": "task",
+      "content-type": "text"
+    },
     {
       "target": "procedure.html",
       "source": "procedure.md",
@@ -31,10 +37,11 @@
     {
       "target": "index.html",
       "source": "simulation/index.html",
-      "label": "simulation",
+      "label": "Simulation",
       "unit-type": "task",
       "content-type": "simulation"
     },
+    
     {
       "unit-type": "task",
       "label": "Posttest",
@@ -44,3 +51,4 @@
     }
   ]
 }
+
