@@ -36,7 +36,7 @@
     },
     {
       "target": "index.html",
-      "source": "simulation/index.html",
+      "source": "index.html",
       "label": "Simulation",
       "unit-type": "task",
       "content-type": "simulation"
