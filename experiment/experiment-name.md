@@ -1,1 +1,0 @@
-## Log and Antilog amplifiers.
