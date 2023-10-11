@@ -41,7 +41,9 @@
 					top: "-150%"
 				}, 4000); t = 1;
 			});
+
 			function plot() {
+
 				var ctx = document.getElementById("canvas").getContext('2d');
 				var len1 = l1.length;
 				//sorting
@@ -87,6 +89,7 @@
 				});
 			}
 			function insert() {
+
 				if (f == 1) {
 					x = parseFloat(document.getElementById("stop").value);
 					C = x * (10 ** 4) / 14;
@@ -115,14 +118,30 @@
 				}
 			}
 			function updateAll() {
+
+			let toggle = 1;
+
+				if (toggle === 1 )  {
+
+				document.getElementById('stop').disabled= 0;
+
+				}
+
+			      else {
+					document.getElementById('stop').disabled=1
+				  }
+
 				f = f + temp;
 				temp = f - temp;
 				f = f - temp;
 				display();
 				console.log(f);
 			}
+
 			function display() {
+
 				if (f == 0) {
+
 					document.getElementById("x").value = "";
 					document.getElementById("y").value = "";
 					if (i > 2) for (var q = 2; q < i; q++) document.getElementById(q).remove();
@@ -130,23 +149,42 @@
 					ctx.clearRect(0, 0, canvas.width, canvas.height);
 					i = 2; count = 1; l1 = []; l2 = [];
 					document.getElementById("axis").style.visibility = "hidden";
+						
 				}
+
 				else if (f == 1) {
+
 					document.getElementById("stop").value = 1;
+					
+					
 				}
 			}
+
 			function stop() {
+
 				alert("You cannot read more values");
-				//document.getElementById("stop").disabled="true";
+
 			}
 
 			function updateTextBox(val) {
+
+
+				const stop =document.getElementById('stop')
+
 				if (f == 1) {
 					//alert("hello");
 					document.getElementById("x").value = val + "mV";
 					document.getElementById("y").value = "";
+					
 				}
-				else alert("Please turn on the Power ");
+				else if (f== 0)  {
+				
+				
+				document.getElementById('stop').disabled=true;
+				
+				}
+				
+				
 			}
 
 		</script>
@@ -192,8 +230,10 @@
 			<br>
 			<br>
 			<tr style="position: absolute;top: 24%;right: 8.5%;">
+
 				<th><b>Voltage (in V)</b></th>
-				<td><input type="range" min="1" max="20" step="0.5" onchange="insert()"
+
+				<td><input type="range" min="1" max="20" step="0.5" disabled="1"  onchange="insert()"
 						oninput="updateTextBox(this.value)" id="stop" value="0"></td>
 			</tr>
 		</div>
@@ -277,9 +317,7 @@
 		<!-- <a id="myBtn" href="#"><button id="myBtn" class="btn btn-primary"
 				style="margin-top: -22px;">Instructions</button></a> -->
 		<div id="myModal" class="modal">
-			<div class="modal-content" style="position: absolute;
-			width: 66%;
-			left: 3%;">
+			<div class="modal-content"style="position:absolute;width:66%;left:3%;">
 				<div class="modal-header">
 					<span class="close">&times;</span>
 					<h2>Instructions</h2>
@@ -325,16 +363,20 @@
 
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function () {
+
 			modal.style.display = "none";
 		}
 
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function (event) {
+
 			if (event.target == modal) {
+
 				modal.style.display = "none";
 			}
 		}
 		function printf() {
+
 			if (t) document.getElementById("se-pre-con").remove();
 			t = 0;
 			window.print();
