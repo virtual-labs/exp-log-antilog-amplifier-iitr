@@ -4,12 +4,23 @@
     
     var yy=document.getElementById("check")
     yy.onclick=checkk;
+
     function checkk()
     {
-       if(connections.length<4)
-       {alert("Wrong Connections\nPlease go through the instructions once")
-       return false}
-        
+
+        if(connections.length==0)  
+        {
+         alert("Please make the connections first");
+        return false;
+    }
+         
+        if(connections.length<4)
+        {
+            alert("Wrong Connections\nPlease go through the instructions once")
+        return false;
+    }
+
+
         if (connections.length > 0) {
             var listDiv = []
              for (var j = 0; j < connections.length; j++) {
@@ -27,6 +38,10 @@
 			 if((num[i]+1==num[i+1])||(num[i]-1==num[i+1])) continue
 			 else {f=1;break;}
          }
+
+
+        
+
          
          if(f!=0) {
          alert("Wrong Connections\nPlease go through the instructions once");
